@@ -1,2 +1,30 @@
-@import url(../../output.css);
-@import url(../../public/tailwind_base.css);
+@import url(./output.css);
+@import url(./tailwind_base.css);
+
+.container-messages.place-items-end {
+    grid-template-columns: 1fr auto;
+}
+.container-messages.place-items-start {
+    grid-template-columns: auto 1fr ;
+}
+.place-items-end .chat-avatar{
+    grid-column-start: 2;
+    grid-row: span 2 / span 2;
+    align-self: flex-end;
+    bottom: 20px;
+}
+.place-items-start .chat-avatar {
+    top: 30px;
+
+}
+.chat-message{
+    max-width: 90%;
+}
+
+/* TOODOOO implementar before ce .chat-message
+    +  millorar visualitzacio de imagen.
+*/
+
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
