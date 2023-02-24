@@ -1,5 +1,5 @@
 <script setup>
-import FileLayout from './fileLayout.vue';
+import FileLayout from '../components/FileLayout.vue';
 import {useMessageStore} from '../storages/messages'
 
 import { XMarkIcon } from '@heroicons/vue/24/outline';
@@ -8,7 +8,7 @@ import { PaperAirplaneIcon } from '@heroicons/vue/24/solid';
 
 <script>
 export default {
-  name: 'modalLayout',
+  name: 'modalMessages',
   components: { FileLayout, },
   props: {
     openModal: { type:Boolean, default:false },

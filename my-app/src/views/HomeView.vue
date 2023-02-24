@@ -1,10 +1,10 @@
 <script setup>
-import ModalLayout from '../components/ModalLayout.vue'
+import ModalMessages from '../components/ModalMessages.vue'
 </script>
 
 <script>
 export default {
-  components: { ModalLayout, },
+  components: { ModalMessages, },
   name: 'HomeView',
   props: {
   },
@@ -24,7 +24,7 @@ export default {
     >
       Añadir nuevo comentario
     </button>
-    <modal-layout
+    <modal-messages
       :openModal="openModal"
       @close="openModal=!openModal"
     />
